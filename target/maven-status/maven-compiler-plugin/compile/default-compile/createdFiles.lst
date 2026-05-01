@@ -1,0 +1,4 @@
+dto\Aspirante.class
+bean\AspiranteBean.class
+dao\AspiranteDAO.class
+dto\Persona.class

@@ -1,0 +1,33 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="jakarta.faces.html"
+      xmlns:f="jakarta.faces.core">
+
+<h:body>
+
+<h2>Lista de Aspirantes</h2>
+
+<h:dataTable value="#{asp.lista}" var="a" border="1">
+
+    <h:column>
+        <f:facet name="header">ID</f:facet>
+        #{a.identificacion}
+    </h:column>
+
+    <h:column>
+        <f:facet name="header">Nombre</f:facet>
+        #{a.nombres}
+    </h:column>
+
+    <h:column>
+        <f:facet name="header">Programa</f:facet>
+        #{a.programa}
+    </h:column>
+
+</h:dataTable>
+
+<footer>
+    Camilo Camargo - Programación Web - 2026
+</footer>
+
+</h:body>
+</html>
